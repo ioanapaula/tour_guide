@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/element_image"
+        android:src="@mipmap/city_clipart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_padding_left"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ItemTitle"
+            android:id="@+id/element_name"
+            tools:text="Name" />
+
+        <TextView
+            style="@style/ItemAddress"
+            android:id="@+id/element_address"
+            tools:text="Address" />
+
+        <TextView
+            style="@style/ItemDescription"
+            android:id="@+id/element_description"
+            tools:text="Description" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
